@@ -77,13 +77,13 @@ void setLength(int input, int *length) {
 }
 
 void setWidth(int input, int *width) {
-	if (input > 0 && input <= 100) {
+	if (input > 1 && input <= 100) {
 		*width = input;
 	}
 }
 
 int getPerimeter(int *length, int *width) {
-	int perimeter = 2 * ( *length + *width);
+	int perimeter = 2 * ( *length + *width);	//Updated the perimeter of a rectangle Formula
 	return perimeter;
 }
 
